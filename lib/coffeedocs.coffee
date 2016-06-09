@@ -134,13 +134,15 @@ class CoffeeDocs
     Snippets = atom.packages.activePackages.snippets.mainModule
     Snippets?.insert(str, editor)
 
-  # Public: Generates a suitable snippet base on the functionDef.
-  #
-  # * `functionDef` - The {Object} with the function definition:
-  #   * `name` {String} with name of the function.
-  #   * `args` {Array} with function arguments.
-  #
-  # Returns: The generated snippet as {String}.
+  ###
+    Public: Generates a suitable snippet base on the functionDef.
+
+    - `functionDef` - The {Object} with the function definition:
+      - `name` {String} with name of the function.
+      - `args` {Array} with function arguments.
+
+    Returns: The generated snippet as {String}.
+  ###
   generateSnippetFunc: (functionDef) ->
     #TODO: handle desctructuring
     functionArgs = _.map(functionDef.args, (arg) -> "`#{arg}`")

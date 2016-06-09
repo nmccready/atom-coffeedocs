@@ -1,8 +1,26 @@
 # CoffeeDocs
 
+Forked from Maximilian Schüßler (maschs) original repo (deleted).
+
 [![Build Status](https://travis-ci.org/nmccready/coffeedocs.svg?branch=master)](https://travis-ci.org/nmccready/coffeedocs)
 
 Generate CoffeeScript documentation following the [Atom documentation styleguide](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#documentation-styleguide)!
+
+The below image is accurate in functionality but the comment format has been changed to block comments.
+
+Example:
+```
+###
+  Public: [Description]
+
+ - `key` The [description] as {[type]}.
+
+  Returns the [Description] as `undefined`.
+###
+someFunc = (key) ->
+```
+
+Animated Gif below needs to be updated:
 
 ![coffeedocs-generator](https://raw.github.com/nmccready/coffeedocs/master/docs/example.gif)
 
